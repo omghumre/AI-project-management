@@ -25,17 +25,12 @@ The AI-Powered Project Management Analytics System integrates Google's Gemini Pr
 ### 1.2 Project Structure
 ```plaintext
 project/
-├── app.py
+├── main.py
 ├── .env
 ├── requirements.txt
 ├── README.md
-├── data/
-│   └── project_data.csv
-├── docs/
-│   ├── setup_guide.md
-│   └── user_manual.md
-└── tests/
-    └── test_analytics.py
+├── project_data.csv
+├── .gitignore
 ```
 
 ## 2. Technical Architecture
@@ -291,101 +286,3 @@ Project_ID,Task_Name,Estimated_Days,Actual_Days,...
 P001,Task1,10,12,...
 P001,Task2,15,14,...
 ```
-
-## 6. Features and Functionality
-
-### 6.1 Predictive Scheduling
-- Historical data analysis
-- Timeline predictions
-- Bottleneck identification
-- Schedule optimization
-
-### 6.2 Resource Optimization
-- Resource utilization analysis
-- Efficiency metrics
-- Idle time reduction
-- Resource allocation recommendations
-
-### 6.3 Risk Assessment
-- Risk matrix visualization
-- Risk type analysis
-- Impact assessment
-- Mitigation strategies
-
-## 7. Testing
-
-### 7.1 Test Cases
-```python
-# test_analytics.py
-import unittest
-from app import ProjectAnalytics
-
-class TestProjectAnalytics(unittest.TestCase):
-    def setUp(self):
-        self.df = pd.read_csv('test_data.csv')
-        self.analytics = ProjectAnalytics(self.df)
-
-    def test_analyze_timeline(self):
-        result = self.analytics.analyze_timeline('P001')
-        self.assertIsNotNone(result)
-
-    def test_optimize_resources(self):
-        result = self.analytics.optimize_resources('P001')
-        self.assertIsNotNone(result)
-
-    def test_assess_risks(self):
-        result = self.analytics.assess_risks('P001')
-        self.assertIsNotNone(result)
-```
-
-## 8. Maintenance
-
-### 8.1 Regular Tasks
-- Update dependencies
-- Monitor API usage
-- Backup data
-- Review system logs
-
-### 8.2 Troubleshooting
-- Check API connectivity
-- Validate data format
-- Review error logs
-- Test system components
-
-## 9. Future Enhancements
-
-### 9.1 Planned Features
-- Authentication system
-- Database integration
-- Custom reporting
-- Advanced analytics
-- Mobile responsiveness
-
-### 9.2 Technical Improvements
-- Code optimization
-- Enhanced error handling
-- Performance monitoring
-- API caching
-
-## 10. Appendix
-
-### 10.1 API Documentation
-- [Gemini API Documentation](https://ai.google.dev/docs)
-- [Streamlit Documentation](https://docs.streamlit.io)
-
-### 10.2 Additional Resources
-- Project management best practices
-- AI integration guidelines
-- Data formatting standards
-- Testing procedures
-
-### 10.3 Contact Information
-- Technical Support: support@example.com
-- Project Manager: pm@example.com
-```
-
-This documentation provides a comprehensive overview of the project, including setup instructions, code implementation, architecture, and maintenance guidelines. Users can refer to specific sections as needed for implementation, troubleshooting, or future development.
-
-Note: The mermaid diagrams require a markdown viewer that supports mermaid syntax for proper rendering.
-
-Would you like me to provide any specific section in more detail or add additional information to any part of the documentation?
