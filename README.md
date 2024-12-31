@@ -1,4 +1,3 @@
-```markdown
 # AI-Powered Project Management Analytics System
 ## Complete Project Documentation
 
@@ -8,11 +7,6 @@
 3. [Implementation Details](#3-implementation-details)
 4. [Code Base](#4-code-base)
 5. [Setup and Installation](#5-setup-and-installation)
-6. [User Guide](#6-user-guide)
-7. [Testing](#7-testing)
-8. [Maintenance](#8-maintenance)
-9. [Future Enhancements](#9-future-enhancements)
-10. [Appendix](#10-appendix)
 
 ## 1. Project Overview
 
